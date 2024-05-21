@@ -1,7 +1,7 @@
-set(OPENTXS_REPO "ssh://git@github.com/matterfi/opentxs")
-set(OPENTXS_COMMIT "5efa5da00f2ecde80c39d971d3eb782003ae70e5")
+set(OPENTXS_REPO "ssh://git@github.com:puszupek/opentxs")
+set(OPENTXS_COMMIT "e61d88c09fd8d35bae252aed0a0f1905a3422d11")
 set(SOURCE_PATH "${DOWNLOADS}/opentxs.git")
-set(OT_VERSION_STRING "1.192.1-0-g5efa5da00f")
+set(OT_VERSION_STRING "1.193.0-0-ge61d88c09f")
 
 find_program(
   GIT
@@ -116,6 +116,8 @@ vcpkg_cmake_configure(
   -DOT_INSTALL_HEADERS=OFF
   -DOT_INSTALL_LICENSE=OFF
   -DOT_INSTALL_PROTOBUF=OFF
+  -DCMAKE_EXE_LINKER_FLAGS="-fuse-ld=mold"
+  -DCMAKE_SHARED_LINKER_FLAGS="-fuse-ld=mold"
 )
 
 vcpkg_cmake_install()
