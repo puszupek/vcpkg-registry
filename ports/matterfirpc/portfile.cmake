@@ -6,7 +6,7 @@ vcpkg_from_git(
   URL
   ssh://git@github.com/puszupek/matterfirpc.git
   REF
-  ea55479fb3079b62a3b7f8de8264f9e17f3d5b4a
+  678a52601255d26d8f18c9478c3f34620a38bec7
   HEAD_REF
   ME-617/The_app_crashes_during_ETH_synchronization_after_wallet_restores_Boost)
 
