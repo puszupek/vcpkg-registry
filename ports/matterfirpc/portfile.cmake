@@ -4,11 +4,11 @@ vcpkg_from_git(
   OUT_SOURCE_PATH
   SOURCE_PATH
   URL
-  ssh://git@github.com/matterfi/matterfirpc.git
+  ssh://git@github.com/puszupek/matterfirpc.git
   REF
-  4b48664bfbd85fd6db9ae1774cbe9868f0db5d96
+  678a52601255d26d8f18c9478c3f34620a38bec7
   HEAD_REF
-  release-0.2)
+  ME-617/The_app_crashes_during_ETH_synchronization_after_wallet_restores_Boost)
 
 vcpkg_cmake_configure(
   SOURCE_PATH
